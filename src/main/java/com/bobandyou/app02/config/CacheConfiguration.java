@@ -40,6 +40,18 @@ public class CacheConfiguration {
             createCache(cm, com.bobandyou.app02.domain.User.class.getName());
             createCache(cm, com.bobandyou.app02.domain.Authority.class.getName());
             createCache(cm, com.bobandyou.app02.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.bobandyou.app02.domain.Region.class.getName());
+            createCache(cm, com.bobandyou.app02.domain.Country.class.getName());
+            createCache(cm, com.bobandyou.app02.domain.Location.class.getName());
+            createCache(cm, com.bobandyou.app02.domain.Department.class.getName());
+            createCache(cm, com.bobandyou.app02.domain.Department.class.getName() + ".employees");
+            createCache(cm, com.bobandyou.app02.domain.Task.class.getName());
+            createCache(cm, com.bobandyou.app02.domain.Task.class.getName() + ".jobs");
+            createCache(cm, com.bobandyou.app02.domain.Employee.class.getName());
+            createCache(cm, com.bobandyou.app02.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, com.bobandyou.app02.domain.Job.class.getName());
+            createCache(cm, com.bobandyou.app02.domain.Job.class.getName() + ".tasks");
+            createCache(cm, com.bobandyou.app02.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
